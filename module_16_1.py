@@ -21,6 +21,6 @@ async def user_id(user_id) -> str:
   return f'Вы вошли как пользователь № {user_id}'
 
 
-@app.get('/user/{username}/{age}')
+@app.get('/user')
 async def user(username: str, age: int) -> str:
   return f'Информация о пользователе. Имя: {username}, Возраст: {age}'
